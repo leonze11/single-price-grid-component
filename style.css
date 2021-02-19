@@ -21,16 +21,12 @@ body{
 
 
 .price{
-    /* position: absolute; */
     width: 638px;
-    height: 476;
+    /* height: 476; */
     border: 1px solid #e6eff6;
     border-radius: 10px;
     margin: 0 auto;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    overflow: hidden; */
+    overflow: hidden;
 }
 .price-header{
     padding-top: 50px;
@@ -65,7 +61,7 @@ body{
     align-items: center;
     padding-bottom: 38px;
     color: #fff;
-    background-color: hsl(179, 60%, 39%);
+    
 }
 .monthly h4{
     margin: 21px 0;
@@ -96,13 +92,13 @@ body{
     height: 261px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     font-weight: 400;
-    padding-left: 41px;
-    padding-right: 56px;
+    background-color: hsl(179, 62%, 60%);
 }
 .why-us h4{
     margin: 21px 0;
+    padding-left: 30px ;
     font-weight: 400;
     color: #fff;
 }
@@ -110,8 +106,32 @@ body{
     list-style: none;
     font-size: 14px;
     color: rgba(255,255,255,0.8);
+    padding-left: 30px;
 }
 footer{
 text-align: center;
 margin-top: 10px;
+}
+
+@media all and (max-width: 500px){
+    
+    
+    .price{
+        width: 330px;
+    
+    }
+   .container{
+       display: flex;
+       flex-direction: column;
+   }
+   .why-us{
+       width: 100%;
+   }
+   .why-us li{
+       padding-left: 32px;
+   }
+   .price-header{
+    padding-right: 303px;
+    padding-bottom: 235px;
+   }
 }
